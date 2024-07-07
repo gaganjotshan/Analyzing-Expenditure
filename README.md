@@ -168,49 +168,51 @@ Legend:
 - [  ] : For Deliverables (Empty: Not Started, /: In Progress, X: Completed)
 
 ## Project Structure
+
+```plaintext
 analyzing-expenditure/
 │
 ├── data/
-│ ├── raw/
-│ └── processed/
+│   ├── raw/
+│   └── processed/
 │
 ├── notebooks/
-│ ├── 01_data_exploration.ipynb
-│ ├── 02_data_preprocessing.ipynb
-│ └── 03_data_analysis.ipynb
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_data_preprocessing.ipynb
+│   └── 03_data_analysis.ipynb
 │
 ├── src/
-│ ├── init.py
-│ ├── data/
-│ │ ├── init.py
-│ │ ├── make_dataset.py
-│ │ └── preprocess_data.py
-│ │
-│ ├── features/
-│ │ ├── init.py
-│ │ └── build_features.py
-│ │
-│ ├── models/
-│ │ ├── init.py
-│ │ └── train_model.py
-│ │
-│ └── visualization/
-│ ├── init.py
-│ └── visualize.py
+│   ├── __init__.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── make_dataset.py
+│   │   └── preprocess_data.py
+│   │
+│   ├── features/
+│   │   ├── __init__.py
+│   │   └── build_features.py
+│   │
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── train_model.py
+│   │
+│   └── visualization/
+│       ├── __init__.py
+│       └── visualize.py
 │
 ├── reports/
-│ ├── figures/
-│ ├── HLD_document.pdf
-│ ├── LLD_document.pdf
-│ ├── architecture_document.pdf
-│ ├── wireframe_document.pdf
-│ └── detailed_project_report.pdf
+│   ├── figures/
+│   ├── HLD_document.pdf
+│   ├── LLD_document.pdf
+│   ├── architecture_document.pdf
+│   ├── wireframe_document.pdf
+│   └── detailed_project_report.pdf
 │
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
 └── setup.py
-
+```
 
 ## Team
 ineuron Data Analyst Team
