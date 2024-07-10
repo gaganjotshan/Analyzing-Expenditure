@@ -1,20 +1,31 @@
-# Analyzing-Expenditure: Cost Management and Data Mining for Business Optimization
+# Analyzing-Expenditure: 
 
-Version: 1.0 | Date: 2024-07-07 | Project Lead: iNeuron | Contact: gagan.shan7@gmail.com
+Cost Management and Data Mining for Business Optimization
+
+
+Version: 1.0 | 
+
+Date: 2024-07-07 | 
+
+Project Lead: iNeuron | 
+
+Contact: gagan.shan7@gmail.com
 
 ## Table of Contents
 
 1. [Project Overview and Objectives](#project-overview-and-objectives)
 2. [Data Sources, Installation and Setup](#data-sources-installation-and-setup)
 3. [Project Structure and Technologies](#project-structure-and-technologies)
-4. [Project Plan and Deliverables](#project-plan-and-deliverables)
+4. [Internship Timeline and Deliverables](#internship-timeline-and-deliverables)
 5. [Team and Communication](#team-and-communication)
 6. [Quality Assurance and Risk Management](#quality-assurance-and-risk-management)
 7. [Conclusion and Future Scope](#conclusion-and-future-scope)
 
 ## Project Overview and Objectives
 
-This advanced-level project in the Finance domain focuses on Business Intelligence to help organizations manage their costs effectively. In today's competitive market, effective cost management is crucial for business survival. High revenues alone are insufficient if costs remain unchecked.
+The complete project is being made as a part of Data Analytics Internship at iNeuron.ai.
+
+This advanced-level project in the Finance domain focuses on Business Intelligence to help organizations manage their costs effectively  In today's competitive market, effective cost management is crucial for business survival. High revenues alone are insufficient if costs remain unchecked.
 This project aims to assist management in creating and establishing new structures and models to reduce costs by leveraging data mining techniques on the NITI Aayog dataset (1980-81 to 2015-16).
 
 ### Key Objectives:
@@ -36,7 +47,9 @@ This project aims to assist management in creating and establishing new structur
 
 The primary data source for this project is the NITI Aayog dataset, covering the period from 1980-81 to 2015-16. This dataset is available from the NITI Aayog website and includes [brief description of the data, its format, and any key characteristics].
 
-[Installation and setup instructions to be added here]
+[Data Source](https://drive.google.com/drive/folders/1FkmFVL8wlJmQWP1z52TD8PlhOJhitTyI?usp=s
+haring)
+[Installation and setup](Installation-setup.md)
 
 ## Project Structure and Technologies
 
@@ -52,7 +65,8 @@ The primary data source for this project is the NITI Aayog dataset, covering the
 
 [Detailed project structure](Project-Structure.md)
 
-## Project Plan and Deliverables
+## Internship Timeline and Deliverables
+
 [Detailed project plan](Project-Timeline.md)
 
 ### Documents and Deliverables:
@@ -62,12 +76,14 @@ The primary data source for this project is the NITI Aayog dataset, covering the
 - Wireframe Document
 - Detailed Project Report (DPR)
 - Tableau Public Link
+
 [Detailed project Deliverables](Documents-Deliverables)
 
 
 ## Team and Communication
 
 Data Analyst Intern: Gaganjot SHAN
+
 Supporting Team: iNeuron Data Analyst Team
 
 ### Stakeholder Communication Plan:
