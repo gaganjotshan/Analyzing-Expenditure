@@ -30,7 +30,7 @@ This project aims to assist management in creating and establishing new structur
 
 ### Key Objectives:
 1. **Cost Management**: Develop strategies and models to reduce operational costs.
-2. **Data Extraction and Transformation**: Perform ETL (Extract-Transform-Load) on the dataset provided by NITI Aayog, covering the period from 1980-81 to 2015-16.
+2. **Data Extraction and Transformation**: Perform ETL (Extract-Transform-Load) on the dataset provided by NITI Aayog.
 3. **Data Mining**: Analyze the dataset to uncover valuable insights and information.
 4. **Key Metrics Identification**: Identify key metrics and factors that influence costs.
 5. **Relationship Analysis**: Show meaningful relationships between different attributes within the dataset.
@@ -45,7 +45,7 @@ This project aims to assist management in creating and establishing new structur
 
 ## Data Sources, Installation and Setup
 
-The primary data source for this project is the NITI Aayog dataset, covering the period from 1980-81 to 2015-16. This dataset is scraped from the NITI Aayog website.
+The primary data source for this project is scraped from NITI Aayog website.
 
 
 [Installation and setup](Installation-setup.md)
