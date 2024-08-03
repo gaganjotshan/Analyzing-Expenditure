@@ -17,15 +17,6 @@ analyzing-expenditure/
 │   ├── data_transformation/
 │   │   ├── __init__.py
 │   │   └── transformation.py
-│   ├── model_trainer/
-│   │   ├── __init__.py
-│   │   └── trainer.py
-│   ├── model_evaluation/
-│   │   ├── __init__.py
-│   │   └── evaluator.py
-│   ├── model_deployment/
-│   │   ├── __init__.py
-│   │   └── deployer.py
 │   └── visualization/
 │       ├── __init__.py
 │       └── visualize.py
@@ -36,20 +27,15 @@ analyzing-expenditure/
 │   ├── architecture_document.pdf
 │   ├── wireframe_document.pdf
 │   └── detailed_project_report.pdf
+├── tests/
+│   ├── __init__.py
+│   ├── test_data_ingestion.py
+│   └── test_data_transformation.py
+├── config/
+│   └── config.yaml
+├── logs/
+│   └── app.log
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
-└── setup.py
-
-
-## Technologies and Tools
-
-- Programming Languages: Python, R
-- Data Processing: Pandas, NumPy
-- Data Visualization: Matplotlib, Seaborn, Tableau
-- Statistical Analysis: SciPy, StatsModels
-- Machine Learning: Scikit-learn
-- Database: SQL (PostgreSQL)
-- Version Control: Git
-- Development Environment: Jupyter Notebooks, VS Code
-- Reporting: LaTeX, Microsoft Office Suite
+└── main.py
