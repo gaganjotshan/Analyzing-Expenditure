@@ -26,7 +26,7 @@ Contact: gagan.shan7@gmail.com
 The complete project is being made as a part of Data Analytics Internship at iNeuron.ai.
 
 This advanced-level project in the Finance domain focuses on Business Intelligence to help organizations manage their costs effectively  In today's competitive market, effective cost management is crucial for business survival. High revenues alone are insufficient if costs remain unchecked.
-This project aims to assist management in creating and establishing new structures and models to reduce costs by leveraging data mining techniques on the NITI Aayog dataset (1980-81 to 2015-16).
+This project aims to assist management in creating and establishing new structures and models to reduce costs by leveraging data mining techniques on the NITI Aayog dataset.
 
 ### Key Objectives:
 1. **Cost Management**: Develop strategies and models to reduce operational costs.
@@ -45,10 +45,9 @@ This project aims to assist management in creating and establishing new structur
 
 ## Data Sources, Installation and Setup
 
-The primary data source for this project is the NITI Aayog dataset, covering the period from 1980-81 to 2015-16. This dataset is available from the NITI Aayog website and includes [brief description of the data, its format, and any key characteristics].
+The primary data source for this project is the NITI Aayog dataset, covering the period from 1980-81 to 2015-16. This dataset is scraped from the NITI Aayog website.
 
-[Data Source](https://drive.google.com/drive/folders/1FkmFVL8wlJmQWP1z52TD8PlhOJhitTyI?usp=s
-haring)
+
 [Installation and setup](Installation-setup.md)
 
 ## Project Structure and Technologies
