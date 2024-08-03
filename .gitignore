@@ -123,6 +123,7 @@ celerybeat.pid
 
 # Environments
 .ineuronEnv/
+ineuronEnv/
 .env
 .venv
 env/
