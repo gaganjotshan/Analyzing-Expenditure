@@ -2,16 +2,16 @@
 
 ### Month 1: Data Extraction and Initial Exploration
 **Week 1-2:**
-- [ ] Set up project infrastructure (Git repository, data storage, development environment)
-- [ ] Conduct kickoff meeting and finalize project scope
-- [ ] Extract data from NITI Aayog 
-- [ ] Perform initial data quality assessment (completeness, accuracy, consistency)
+- [x] Set up project infrastructure (Git repository, data storage, development environment)
+- [x] Conduct kickoff meeting and finalize project scope
+- [x] Extract relavent data from National Institution for Transforming India 
+- [x] Perform initial data quality assessment (completeness, accuracy, consistency)
 
 **Week 3-4:**
-- [ ] Create comprehensive data dictionary
-- [ ] Document initial findings and data characteristics
-- [ ] Conduct preliminary exploratory data analysis
-- [ ] Begin drafting Initial Data Extraction and Exploration Report
+- [x] Create comprehensive data dictionary
+- [x] Document initial findings and data characteristics
+- [x] Conduct preliminary exploratory data analysis
+- [x] Begin drafting Initial Data Extraction and Exploration Report
 - **Deliverable**: Initial Data Extraction and Exploration Report [  ]
 
 ### Month 2: Data Cleaning and Transformation

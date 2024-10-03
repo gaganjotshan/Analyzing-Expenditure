@@ -23,9 +23,10 @@ Contact: gagan.shan7@gmail.com
 
 ## Project Overview and Objectives
 
-The complete project is being made as a part of Data Analytics Internship at iNeuron.ai.
+The complete project is being made as a part of Data Science Internship at iNeuron.ai.
 
-This advanced-level project in the Finance domain focuses on Business Intelligence to help organizations manage their costs effectively  In today's competitive market, effective cost management is crucial for business survival. High revenues alone are insufficient if costs remain unchecked.
+This advanced-level project in the Finance domain focuses on Business Intelligence to help organizations manage their costs effectively.
+In today's competitive market, effective cost management is crucial for business survival. High revenues alone are insufficient if costs remain unchecked.
 This project aims to assist management in creating and establishing new structures and models to reduce costs by leveraging data mining techniques on the NITI Aayog dataset.
 
 ### Key Objectives:
@@ -85,11 +86,6 @@ Data Analyst Intern: Gaganjot SHAN
 
 Supporting Team: iNeuron Data Analyst Team
 
-### Stakeholder Communication Plan:
-- Weekly status reports to be sent to all stakeholders
-- Bi-weekly progress meetings with key stakeholders
-- Monthly presentation of key findings and progress
-- Ad-hoc meetings as needed for critical decision-making or issue resolution
 
 ## Quality Assurance and Risk Management
 
