@@ -55,7 +55,7 @@ The primary data source for this project is scraped from NITI Aayog website.
 
 - Programming Languages: Python, SQL
 - Data Processing: Pandas, NumPy
-- Data Visualization: Matplotlib, Seaborn, Tableau
+- Data Visualization: Matplotlib, Seaborn, Power BI
 - Statistical Analysis: SciPy, StatsModels
 - Machine Learning: Scikit-learn
 - Database: SQL (PostgreSQL)

@@ -16,20 +16,20 @@
 
 ### Month 2: Data Cleaning and Transformation
 **Week 5-6:**
-- [ ] Develop and implement data cleaning scripts
-- [ ] Handle missing values, outliers, and inconsistencies
-- [ ] Perform feature engineering and data normalization
+- [x] Develop and implement data cleaning scripts
+- [x] Handle missing values, outliers, and inconsistencies
+- [x] Perform feature engineering and data normalization
 
 **Week 7-8:**
-- [ ] Validate cleaned data for integrity and consistency
-- [ ] Document data cleaning and transformation processes
+- [x] Validate cleaned data for integrity and consistency
+- [x] Document data cleaning and transformation processes
 - **Deliverable**: Cleaned and Transformed Dataset [  ]
 
 ### Month 3: Exploratory Data Analysis (EDA)
 **Week 9-10:**
-- [ ] Conduct detailed exploratory data analysis
-- [ ] Use visualizations to identify patterns and trends
-- [ ] Perform descriptive statistics and summary metrics
+- [x] Conduct detailed exploratory data analysis
+- [x] Use visualizations to identify patterns and trends
+- [x] Perform descriptive statistics and summary metrics
 
 **Week 11-12:**
 - [ ] Document insights from EDA
@@ -68,12 +68,12 @@
 
 **Week 23-24:**
 - [ ] Create project demo video showcasing key findings
-- [ ] Refine Tableau dashboard for stakeholder presentation
+- [ ] Refine Power BI dashboard for stakeholder presentation
 - [ ] Prepare and rehearse final presentation
 - [ ] Conduct final review and refinement of all deliverables
 - [ ] Organize and archive all project documentation
 - [ ] Prepare knowledge transfer documents
-- **Final Deliverables**: HLD, LLD, DPR, Demo Video, Tableau Dashboard, Final Presentation, and Complete Project Documentation [  ]
+- **Final Deliverables**: HLD, LLD, DPR, Demo Video, Power BI Dashboard, Final Presentation, and Complete Project Documentation [  ]
 
 ### Legend
 - [ ] : Not Started
