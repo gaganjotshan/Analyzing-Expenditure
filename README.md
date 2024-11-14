@@ -53,7 +53,7 @@ The primary data source for this project is scraped from NITI Aayog website.
 
 ## Project Structure and Technologies
 
-- Programming Languages: Python, R
+- Programming Languages: Python, SQL
 - Data Processing: Pandas, NumPy
 - Data Visualization: Matplotlib, Seaborn, Tableau
 - Statistical Analysis: SciPy, StatsModels
@@ -75,16 +75,16 @@ The primary data source for this project is scraped from NITI Aayog website.
 - Architecture Document
 - Wireframe Document
 - Detailed Project Report (DPR)
-- Tableau Public Link
+- Dashboard Public Link
 
 [Detailed project Deliverables](Documents-Deliverables)
 
 
 ## Team and Communication
 
-Data Analyst Intern: Gaganjot SHAN
+Data Analyst Intern: Gaganjot Kaur SHAN
 
-Supporting Team: iNeuron Data Analyst Team
+Supporting Team: iNeuron Data Science Team
 
 
 ## Quality Assurance and Risk Management
