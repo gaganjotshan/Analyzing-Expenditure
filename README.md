@@ -3,7 +3,7 @@
 Cost Management and Data Mining for Business Optimization
 
 
-Version: v1.0 | 
+Version: v1.0.0 | 
 
 Date: 15-07-2024 | 
 
