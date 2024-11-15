@@ -3,11 +3,11 @@
 Cost Management and Data Mining for Business Optimization
 
 
-Version: 1.0 | 
+Version: v1.0 | 
 
-Date: 2024-07-07 | 
+Date: 15-07-2024 | 
 
-Project Lead: iNeuron | 
+Project Lead: iNeuron.ai | 
 
 Contact: gagan.shan7@gmail.com
 

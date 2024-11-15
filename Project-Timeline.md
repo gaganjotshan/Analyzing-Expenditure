@@ -32,26 +32,26 @@
 - [x] Perform descriptive statistics and summary metrics
 
 **Week 11-12:**
-- [ ] Document insights from EDA
-- [ ] Begin drafting Exploratory Data Analysis Report
+- [/] Document insights from EDA
+- [/] Begin drafting Exploratory Data Analysis Report
 - **Deliverable**: Exploratory Data Analysis Report [  ]
 
 ### Month 4: Statistical Analysis and Insights
 **Week 13-14:**
-- [ ] Conduct in-depth statistical analysis to identify key metrics
-- [ ] Perform correlation analysis between cost factors and other variables
-- [ ] Explore complex relationships between attributes
+- [x] Conduct in-depth statistical analysis to identify key metrics
+- [x] Perform correlation analysis between cost factors and other variables
+- [x] Explore complex relationships between attributes
 
 **Week 15-16:**
-- [ ] Identify potential cost drivers and areas for optimization
+- [x] Identify potential cost drivers and areas for optimization
 - [ ] Validate findings through rigorous statistical testing
 - [ ] Start drafting Statistical Analysis and Insights Report
 - **Deliverable**: Statistical Analysis and Insights Report [  ]
 
 ### Month 5: Visualization and Interpretation
 **Week 17-18:**
-- [ ] Design and create comprehensive data visualizations
-- [ ] Develop interactive Tableau/Power BI dashboard for key metrics and trends
+- [x] Design and create comprehensive data visualizations
+- [x] Develop interactive Tableau/Power BI dashboard for key metrics and trends
 - [ ] Interpret analysis results in the context of cost management
 
 **Week 19-20:**
