@@ -5,7 +5,7 @@ Cost Management and Data Mining for Business Optimization
 
 Version: v2.0.0 | 
 
-Date: 15-07-2024 | 
+Date: 11-11-2024 | 
 
 Project Lead: iNeuron.ai | 
 
