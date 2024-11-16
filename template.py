@@ -18,7 +18,7 @@ list_of_files = [
     f"src/{project_name}/analysis/__init__.py",
     f"src/{project_name}/analysis/eda.py",
     f"src/{project_name}/visualization/__init__.py",
-    f"src/{project_name}/visualization/dashboard",
+    f"src/{project_name}/visualization/dashboard.py",
     f"src/{project_name}/utils/__init__.py",
     f"src/{project_name}/utils/config.py",
     f"src/{project_name}/utils/logger.py",
@@ -43,6 +43,7 @@ list_of_files = [
     "config/config.yaml",
     "requirements.txt",
     "setup.py",
+    "templates/index.html"
     "README.md",
     ".gitignore",
     "Dockerfile",

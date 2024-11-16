@@ -1,0 +1,13 @@
+beautifulsoup4
+requests 
+pandas 
+numpy
+seaborn
+matplotlib
+scikit-learn
+sqlalchemy 
+psycopg2
+ydata-profiling
+ipywidgets
+
+-e .
