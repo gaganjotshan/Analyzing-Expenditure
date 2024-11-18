@@ -9,5 +9,8 @@ sqlalchemy
 psycopg2
 ydata-profiling
 ipywidgets
+xlrd
+openpyxl
+
 
 -e .
