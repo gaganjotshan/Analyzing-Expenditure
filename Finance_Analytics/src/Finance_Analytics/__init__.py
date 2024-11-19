@@ -19,4 +19,4 @@ logging.basicConfig(
     ]
 )
 
-logger = logging.getLogger("Finance_AnalyticsLogger")
+logger = logging.getLogger("Finance_Analytics_Logger")
