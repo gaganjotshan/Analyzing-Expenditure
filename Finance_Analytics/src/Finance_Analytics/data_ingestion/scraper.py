@@ -13,13 +13,26 @@ class RBIDataScraper:
     def __init__(self):
         self.url = "https://rbi.org.in/scripts/OccasionalPublications.aspx?head=Handbook%20of%20Statistics%20on%20State%20Government%20Finances%20-%202010"
         self.tables_to_download = {
+            # Essential tables for Expenditure Analysis Dashboard
             'Aggregate_Expenditure': 'Table 14 : Aggregate Expenditure',
-            'Capital_Expenditure': 'Table 19 : Capital Expenditure',
-            'Gross_Fiscal_Deficits': 'Table 1 : Gross Fiscal Deficit',
-            'Own_Tax_Revenues': 'Table 6 : Own Tax Revenue',
-            'Revenue_Deficits': 'Table 2 : Revenue Deficit',
             'Revenue_Expenditure': 'Table 15 : Revenue Expenditure',
-            'Social_Sector_Expenditure': 'Table 22 : Social Sector Expenditure'
+            'Capital_Expenditure': 'Table 19 : Capital Expenditure',
+            'Social_Sector_Expenditure': 'Table 22 : Social Sector Expenditure',
+            
+            # Supporting tables for Expenditure Analysis Dashboard
+            'Interest_Payments': 'Table 16 : Interest Payments',
+            'Pension': 'Table 17 : Pension',
+            'Administrative_Services': 'Table 18 : Administrative Services',
+            'Gross_Fiscal_Deficit': 'Table 1 : Gross Fiscal Deficit',
+            
+            # Additional tables for Anomaly Detection Model
+            'Revenue_Deficit': 'Table 2 : Revenue Deficit',
+            'Aggregate_Receipts': 'Table 4 : Aggregate Receipts',
+            'Own_Tax_Revenue': 'Table 6 : Own Tax Revenue',
+            'Capital_Receipts': 'Table 12 : Capital Receipts',
+            'Revenue_Receipts': 'Table 5 : Revenue Receipts',
+            'Market_Borrowings': 'Table 27 : Market Borrowings',
+            'Outstanding_Liabilities': 'Table 28 : Composition of Outstanding Liabilities'
         }
         # Set absolute path for raw data directory
         self.raw_data_dir = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/raw")
