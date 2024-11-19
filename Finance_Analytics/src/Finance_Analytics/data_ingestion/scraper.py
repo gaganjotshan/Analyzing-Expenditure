@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd  # Import pandas for conversion
+import pandas as pd  
 
 # Add the project's root directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
