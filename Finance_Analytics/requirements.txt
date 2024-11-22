@@ -11,6 +11,7 @@ ydata-profiling
 ipywidgets
 xlrd
 openpyxl
+dash
 
 
 -e .
