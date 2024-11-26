@@ -5,7 +5,14 @@ import pandas as pd
 import plotly.express as px
 
 # Load your cleaned data
-df = pd.read_csv('/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final/Final_expenditure.csv')
+df = pd.read_csv('/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final/expenditure_analysis.csv')
+
+# Convert 'Year' to a numeric value representing the starting year
+df['Year'] = df['Year'].apply(lambda x: int(x.split('-')[0]))
+
+# Replace any non-numeric values in 'Value' with NaN and drop those rows
+df['Value'] = pd.to_numeric(df['Value'], errors='coerce')
+df.dropna(subset=['Value'], inplace=True)
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
@@ -25,7 +32,7 @@ app.layout = html.Div([
         ),
         dcc.Dropdown(
             id='category-dropdown',
-            options=[{'label': 'All', 'value': 'All'}] + [{'label': cat, 'value': cat} for cat in df['Exp Category'].unique()],
+            options=[{'label': 'All', 'value': 'All'}] + [{'label': cat, 'value': cat} for cat in df['Exp_Category'].unique()],
             value='All',
             multi=False,
             clearable=False,
@@ -35,10 +42,10 @@ app.layout = html.Div([
     
     dcc.RangeSlider(
         id='year-slider',
-        min=df['Year'].apply(lambda x: int(x.split('-')[0])).min(),
-        max=df['Year'].apply(lambda x: int(x.split('-')[0])).max(),
-        value=[df['Year'].apply(lambda x: int(x.split('-')[0])).min(), df['Year'].apply(lambda x: int(x.split('-')[0])).max()],
-        marks={str(year): str(year) for year in range(df['Year'].apply(lambda x: int(x.split('-')[0])).min(), df['Year'].apply(lambda x: int(x.split('-')[0])).max() + 1)},
+        min=df['Year'].min(),
+        max=df['Year'].max(),
+        value=[df['Year'].min(), df['Year'].max()],
+        marks={str(year): str(year) for year in range(df['Year'].min(), df['Year'].max() + 1)},
         step=1,
     ),
     
@@ -58,40 +65,51 @@ app.layout = html.Div([
 )
 def update_graphs(selected_state, selected_category, year_range):
     # Filter data based on selected state
-    if selected_state == 'All':
-        filtered_df = df
-    else:
-        filtered_df = df[df['State'] == selected_state]
+    filtered_df = df.copy()
+    
+    if selected_state != 'All':
+        filtered_df = filtered_df[filtered_df['State'] == selected_state]
 
     # Filter data based on year range
     filtered_df = filtered_df[
-        (filtered_df['Year'].apply(lambda x: int(x.split('-')[0])) >= year_range[0]) & 
-         (filtered_df['Year'].apply(lambda x: int(x.split('-')[0])) <= year_range[1])
+        (filtered_df['Year'] >= year_range[0]) & 
+        (filtered_df['Year'] <= year_range[1])
     ]
 
     # Filter data based on selected category
     if selected_category != 'All':
-        filtered_df = filtered_df[filtered_df['Exp Category'] == selected_category]
+        filtered_df = filtered_df[filtered_df['Exp_Category'] == selected_category]
     
+    # Check if filtered DataFrame is empty
+    if filtered_df.empty:
+        return {}, {}, "No data available for the selected filters."
+
+    # Aggregate data by Year and Exp_Category
+    aggregated_df = filtered_df.groupby(['Year', 'Exp_Category'], as_index=False)['Value'].sum()
+
     # Time series chart
-    time_series = px.line(filtered_df, x='Year', y='Value', color='Exp Category',
-                          title=f'Expenditure Over Years for {"All States" if selected_state == "All" else selected_state}')
-    time_series.update_layout(legend_title_text='Expenditure Category')
+    time_series = px.line(aggregated_df, x='Year', y='Value', color='Exp_Category',
+                          title=f'Expenditure Over Years for {"All States" if selected_state == "All" else selected_state}',
+                          labels={'Value': 'Expenditure (in ₹)', 'Year': 'Financial Year'},
+                          markers=True)  # Added markers for better visibility
     
+    time_series.update_traces(mode='lines+markers')  # Ensures both lines and markers are shown
+
     # Pie chart for category breakdown
-    category_df = filtered_df[filtered_df['Year'] == str(year_range[1])]
-    pie_chart = px.pie(category_df, values='Value', names='Exp Category',
-                       title=f'Expenditure Breakdown by Category for {"All States" if selected_state == "All" else selected_state} from {year_range[0]} to {year_range[1]}')
+    category_df = aggregated_df[aggregated_df['Year'] == year_range[1]]
+    
+    if category_df.empty:
+        pie_chart = px.pie(title="No data available for pie chart")
+    else:
+        pie_chart = px.pie(category_df, values='Value', names='Exp_Category',
+                           title=f'Expenditure Breakdown by Category for {"All States" if selected_state == "All" else selected_state} from {year_range[0]} to {year_range[1]}')
     
     # Summary statistics
-    total_expenditure = filtered_df['Value'].sum()
-    avg_expenditure = filtered_df['Value'].mean()
-    max_expenditure = filtered_df['Value'].max()
+    total_expenditure = aggregated_df['Value'].sum()
+    avg_expenditure = aggregated_df['Value'].mean()
+    max_expenditure = aggregated_df['Value'].max()
     
-    if not filtered_df.empty:
-        max_year = filtered_df.loc[filtered_df['Value'].idxmax(), 'Year']
-    else:
-        max_year = "N/A"
+    max_year = aggregated_df.loc[aggregated_df['Value'].idxmax(), 'Year'] if not aggregated_df.empty else "N/A"
 
     summary_stats = html.Div([
         html.H4(f"Summary Statistics for {'All States' if selected_state == 'All' else selected_state}"),
