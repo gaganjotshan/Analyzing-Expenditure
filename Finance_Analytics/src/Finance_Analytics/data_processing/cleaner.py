@@ -23,6 +23,7 @@ class DataCleaner:
         for dir in [self.final_data_dir, self.html_reports_dir, self.plots_dir]:
             dir.mkdir(parents=True, exist_ok=True)
 
+    """
     def convert_xlsx_to_csv(self):
         logger.info("Converting expenditure.xlsx to expenditure.csv")
         xlsx_path = self.processed_data_dir / "expenditure.xlsx"
@@ -34,10 +35,11 @@ class DataCleaner:
             logger.info(f"Converted {xlsx_path} to {csv_path}")
         else:
             logger.error(f"Excel file not found: {xlsx_path}")
+    """
 
     def load_data(self):
-        logger.info("Loading processed data")
-        file_path = self.processed_data_dir / "expenditure.csv"
+        logger.info("Loading transformed data")
+        file_path = self.processed_data_dir / "transformed_expenditure.csv"
     
         # First, read the CSV file without specifying dtypes
         df = pd.read_csv(file_path)
@@ -46,7 +48,7 @@ class DataCleaner:
         df.loc[:, 'Value'] = df['Value'].replace('–', np.nan)
     
         # Now convert the columns to the desired dtypes
-        df['Exp Category'] = df['Exp Category'].astype('category')
+        df['Exp_Category'] = df['Exp_Category'].astype('category')
         df['State'] = df['State'].astype('category')
         df['Year'] = df['Year'].astype('category')
         df['Value'] = pd.to_numeric(df['Value'], errors='coerce')
@@ -103,23 +105,27 @@ class DataCleaner:
 
         # 1. Dealing missing values with respect to its state mean
         # Calculate mean values for each state
-        #state_means = df.groupby('State')['Value'].transform('mean')
+        state_means = df.groupby('State')['Value'].transform('mean')
         # Replace NaN and 0 with the respective state mean in the Value column
-        #df['Value'] = df.apply(lambda row: state_means[row.name] if pd.isna(row['Value']) or row['Value'] == 0 else row['Value'], axis=1)
-        #logger.info("Replaced missing and zero values with respective state means in the Value column")
+        df['Value'] = df.apply(lambda row: state_means[row.name] if pd.isna(row['Value']) or row['Value'] == 0 else row['Value'], axis=1)
+        logger.info("Replaced missing and zero values with respective state means in the Value column")
 
+        '''
         # 2. Dealing missing values with respect to the overall mean
         # Calculate the mean of the Value column (excluding NaN and 0)
-        #value_mean = df['Value'][(df['Value'] != 0) & (df['Value'].notna())].mean()
+        value_mean = df['Value'][(df['Value'] != 0) & (df['Value'].notna())].mean()
         # Replace NaN and 0 with the calculated mean in the Value column
-        #df['Value'] = df['Value'].replace({0: value_mean, np.nan: value_mean})
-        #df.loc[:, 'Value'] = df['Value'].fillna(value_mean).replace(0, value_mean)
-        #logger.info(f"Replaced missing and zero values with mean ({value_mean:.2f}) in the Value column")
+        df['Value'] = df['Value'].replace({0: value_mean, np.nan: value_mean})
+        df.loc[:, 'Value'] = df['Value'].fillna(value_mean).replace(0, value_mean)
+        logger.info(f"Replaced missing and zero values with mean ({value_mean:.2f}) in the Value column")
+        '''
         
+        '''
         # 1. Dealing missing values and replacing zero values
         # Replace NaN and existing 0 values with 0 in the Value column
         df.loc[:, 'Value'] = df['Value'].fillna(0).replace(0, 0)
         logger.info("Replaced missing and zero values with 0 in the Value column")
+        '''
 
         # Check for duplicates
         duplicate_count = df.duplicated().sum()
@@ -136,14 +142,14 @@ class DataCleaner:
         return df
 
     def save_cleaned_data(self, df):
-        output_path = self.final_data_dir / "Final_expenditure.csv"
+        output_path = self.final_data_dir / "expenditure_analysis.csv"
         df.to_csv(output_path, index=False)
         logger.info(f"Cleaned data saved to: {output_path}")
 
     def run_cleaning_process(self):
         
         # convert data file to csv
-        self.convert_xlsx_to_csv()
+        #self.convert_xlsx_to_csv()
         
         # Load data
         expenditure = self.load_data()
