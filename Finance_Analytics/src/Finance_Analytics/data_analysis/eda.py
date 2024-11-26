@@ -21,7 +21,7 @@ class ExploratoryDataAnalysis:
 
     def load_data(self):
         logger.info("Loading processed data")
-        data_path = self.processed_data_dir / "Final_expenditure.csv"
+        data_path = self.processed_data_dir / "expenditure_analysis.csv"
         #data_path = self.processed_data_dir / "expenditure1.csv"
         return pd.read_csv(data_path)
     
@@ -34,12 +34,12 @@ class ExploratoryDataAnalysis:
     def plot_expenditure_over_time(self, df):
         logger.info("Plotting expenditure over time")
         plt.figure(figsize=(15, 8))
-        for category in df['Exp Category'].unique():
-            category_data = df[df['Exp Category'] == category]
+        for category in df['Exp_Category'].unique():
+            category_data = df[df['Exp_Category'] == category]
             sns.lineplot(data=category_data, x='Year', y='Value', label=category)
         plt.title('Expenditure Over Time by Category')
         plt.xticks(rotation=45)
-        plt.legend(title='Exp Category', bbox_to_anchor=(1.05, 1), loc='upper left')
+        plt.legend(title='Exp_Category', bbox_to_anchor=(1.05, 1), loc='upper left')
         plt.tight_layout()
         plt.savefig(self.plots_dir / 'expenditure_over_time.png')
         plt.close()
@@ -59,7 +59,7 @@ class ExploratoryDataAnalysis:
     def plot_category_distribution(self, df):
         logger.info("Plotting category distribution")
         plt.figure(figsize=(10, 6))
-        category_totals = df.groupby('Exp Category')['Value'].sum()
+        category_totals = df.groupby('Exp_Category')['Value'].sum()
         category_totals.plot(kind='pie', autopct='%1.1f%%')
         plt.title('Distribution of Expenditure Categories')
         plt.axis('equal')
