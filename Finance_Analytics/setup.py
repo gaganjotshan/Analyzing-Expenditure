@@ -18,7 +18,7 @@ def get_requirements(file_path:str)->List[str]:
 
 setup(
 name='Analyzing-Expenditure',
-version='v2.0.0',
+version='2.0.0',
 author='GaganjotShan',
 author_email='gagan.shan7@gmail.com',
 packages=find_packages(),

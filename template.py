@@ -20,6 +20,7 @@ list_of_files = [
     f"src/{project_name}/data_ingestion/scraper.py",
     f"src/{project_name}/data_processing/__init__.py",
     f"src/{project_name}/data_processing/cleaner.py",
+    "src/{project_name}/data_processing/transformer.py",
     f"src/{project_name}/data_analysis/__init__.py",
     f"src/{project_name}/data_analysis/eda.py",
     f"src/{project_name}/visualization/__init__.py",
