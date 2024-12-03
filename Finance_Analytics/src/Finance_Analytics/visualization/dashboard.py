@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load your cleaned data
-df = pd.read_csv('/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final/expenditure_analysis.csv')
+df = pd.read_csv('/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final/expenditure_analysis/cleaned_expenditure.csv')
 
 # Convert 'Year' to a numeric value representing the starting year
 df['Year'] = df['Year'].apply(lambda x: int(x.split('-')[0]))
