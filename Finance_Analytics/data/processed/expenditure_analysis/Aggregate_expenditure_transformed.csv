@@ -1,0 +1,901 @@
+State,Year,Value
+Andhra Pradesh,1980-81,1610
+Bihar,1980-81,1791
+Chhattisgarh,1980-81,–
+Goa,1980-81,–
+Gujarat,1980-81,1442
+Haryana,1980-81,607
+Jharkhand,1980-81,–
+Karnataka,1980-81,1302
+Kerala,1980-81,855
+Madhya Pradesh,1980-81,1590
+Maharashtra,1980-81,2613
+Orissa,1980-81,877
+Punjab,1980-81,817
+Rajasthan,1980-81,1120
+Tamil Nadu,1980-81,1686
+Uttar Pradesh,1980-81,2668
+West Bengal,1980-81,1552
+Arunachal Pradesh,1980-81,–
+Assam,1980-81,758
+Himachal Pradesh,1980-81,338
+Jammu and Kashmir,1980-81,428
+Manipur,1980-81,159
+Meghalaya,1980-81,102
+Mizoram,1980-81,–
+Nagaland,1980-81,164
+Sikkim,1980-81,43
+Tripura,1980-81,143
+Uttarakhand,1980-81,–
+NCT Delhi,1980-81,–
+Puducherry,1980-81,–
+Andhra Pradesh,1981-82,1831
+Bihar,1981-82,1871
+Chhattisgarh,1981-82,–
+Goa,1981-82,–
+Gujarat,1981-82,1565
+Haryana,1981-82,696
+Jharkhand,1981-82,–
+Karnataka,1981-82,1409
+Kerala,1981-82,1086
+Madhya Pradesh,1981-82,1677
+Maharashtra,1981-82,3088
+Orissa,1981-82,814
+Punjab,1981-82,996
+Rajasthan,1981-82,1360
+Tamil Nadu,1981-82,2006
+Uttar Pradesh,1981-82,2942
+West Bengal,1981-82,1838
+Arunachal Pradesh,1981-82,–
+Assam,1981-82,618
+Himachal Pradesh,1981-82,297
+Jammu and Kashmir,1981-82,548
+Manipur,1981-82,128
+Meghalaya,1981-82,101
+Mizoram,1981-82,–
+Nagaland,1981-82,132
+Sikkim,1981-82,45
+Tripura,1981-82,124
+Uttarakhand,1981-82,–
+NCT Delhi,1981-82,–
+Puducherry,1981-82,–
+Andhra Pradesh,1982-83,1933
+Bihar,1982-83,1940
+Chhattisgarh,1982-83,–
+Goa,1982-83,–
+Gujarat,1982-83,1949
+Haryana,1982-83,917
+Jharkhand,1982-83,–
+Karnataka,1982-83,1739
+Kerala,1982-83,996
+Madhya Pradesh,1982-83,1938
+Maharashtra,1982-83,3585
+Orissa,1982-83,1191
+Punjab,1982-83,1122
+Rajasthan,1982-83,1419
+Tamil Nadu,1982-83,2292
+Uttar Pradesh,1982-83,3490
+West Bengal,1982-83,2072
+Arunachal Pradesh,1982-83,–
+Assam,1982-83,691
+Himachal Pradesh,1982-83,353
+Jammu and Kashmir,1982-83,504
+Manipur,1982-83,137
+Meghalaya,1982-83,117
+Mizoram,1982-83,–
+Nagaland,1982-83,166
+Sikkim,1982-83,47
+Tripura,1982-83,145
+Uttarakhand,1982-83,–
+NCT Delhi,1982-83,–
+Puducherry,1982-83,–
+Andhra Pradesh,1983-84,2588
+Bihar,1983-84,2144
+Chhattisgarh,1983-84,–
+Goa,1983-84,–
+Gujarat,1983-84,2178
+Haryana,1983-84,960
+Jharkhand,1983-84,–
+Karnataka,1983-84,2002
+Kerala,1983-84,1322
+Madhya Pradesh,1983-84,2324
+Maharashtra,1983-84,4244
+Orissa,1983-84,997
+Punjab,1983-84,1434
+Rajasthan,1983-84,1585
+Tamil Nadu,1983-84,2752
+Uttar Pradesh,1983-84,4116
+West Bengal,1983-84,2181
+Arunachal Pradesh,1983-84,–
+Assam,1983-84,942
+Himachal Pradesh,1983-84,385
+Jammu and Kashmir,1983-84,620
+Manipur,1983-84,158
+Meghalaya,1983-84,139
+Mizoram,1983-84,–
+Nagaland,1983-84,215
+Sikkim,1983-84,67
+Tripura,1983-84,188
+Uttarakhand,1983-84,–
+NCT Delhi,1983-84,–
+Puducherry,1983-84,–
+Andhra Pradesh,1984-85,3119
+Bihar,1984-85,2408
+Chhattisgarh,1984-85,–
+Goa,1984-85,–
+Gujarat,1984-85,2463
+Haryana,1984-85,1120
+Jharkhand,1984-85,–
+Karnataka,1984-85,2615
+Kerala,1984-85,1572
+Madhya Pradesh,1984-85,2522
+Maharashtra,1984-85,5063
+Orissa,1984-85,1281
+Punjab,1984-85,1726
+Rajasthan,1984-85,1838
+Tamil Nadu,1984-85,2950
+Uttar Pradesh,1984-85,5186
+West Bengal,1984-85,2738
+Arunachal Pradesh,1984-85,–
+Assam,1984-85,1165
+Himachal Pradesh,1984-85,479
+Jammu and Kashmir,1984-85,747
+Manipur,1984-85,223
+Meghalaya,1984-85,161
+Mizoram,1984-85,–
+Nagaland,1984-85,202
+Sikkim,1984-85,76
+Tripura,1984-85,204
+Uttarakhand,1984-85,–
+NCT Delhi,1984-85,–
+Puducherry,1984-85,–
+Andhra Pradesh,1985-86,3413
+Bihar,1985-86,2966
+Chhattisgarh,1985-86,–
+Goa,1985-86,–
+Gujarat,1985-86,2625
+Haryana,1985-86,1315
+Jharkhand,1985-86,–
+Karnataka,1985-86,2894
+Kerala,1985-86,1969
+Madhya Pradesh,1985-86,2916
+Maharashtra,1985-86,5732
+Orissa,1985-86,1410
+Punjab,1985-86,1963
+Rajasthan,1985-86,2116
+Tamil Nadu,1985-86,3309
+Uttar Pradesh,1985-86,5331
+West Bengal,1985-86,2974
+Arunachal Pradesh,1985-86,–
+Assam,1985-86,1207
+Himachal Pradesh,1985-86,588
+Jammu and Kashmir,1985-86,889
+Manipur,1985-86,247
+Meghalaya,1985-86,188
+Mizoram,1985-86,177
+Nagaland,1985-86,272
+Sikkim,1985-86,104
+Tripura,1985-86,259
+Uttarakhand,1985-86,–
+NCT Delhi,1985-86,–
+Puducherry,1985-86,–
+Andhra Pradesh,1986-87,4068
+Bihar,1986-87,3360
+Chhattisgarh,1986-87,–
+Goa,1986-87,255
+Gujarat,1986-87,3323
+Haryana,1986-87,1509
+Jharkhand,1986-87,–
+Karnataka,1986-87,3069
+Kerala,1986-87,2162
+Madhya Pradesh,1986-87,3349
+Maharashtra,1986-87,6412
+Orissa,1986-87,1730
+Punjab,1986-87,1829
+Rajasthan,1986-87,2557
+Tamil Nadu,1986-87,3612
+Uttar Pradesh,1986-87,6225
+West Bengal,1986-87,3508
+Arunachal Pradesh,1986-87,251
+Assam,1986-87,1586
+Himachal Pradesh,1986-87,648
+Jammu and Kashmir,1986-87,989
+Manipur,1986-87,299
+Meghalaya,1986-87,230
+Mizoram,1986-87,55
+Nagaland,1986-87,344
+Sikkim,1986-87,115
+Tripura,1986-87,300
+Uttarakhand,1986-87,–
+NCT Delhi,1986-87,–
+Puducherry,1986-87,–
+Andhra Pradesh,1987-88,4294
+Bihar,1987-88,3914
+Chhattisgarh,1987-88,–
+Goa,1987-88,258
+Gujarat,1987-88,4089
+Haryana,1987-88,1663
+Jharkhand,1987-88,–
+Karnataka,1987-88,3437
+Kerala,1987-88,2251
+Madhya Pradesh,1987-88,3932
+Maharashtra,1987-88,6929
+Orissa,1987-88,1990
+Punjab,1987-88,2623
+Rajasthan,1987-88,3384
+Tamil Nadu,1987-88,4196
+Uttar Pradesh,1987-88,6901
+West Bengal,1987-88,3941
+Arunachal Pradesh,1987-88,348
+Assam,1987-88,1794
+Himachal Pradesh,1987-88,805
+Jammu and Kashmir,1987-88,1269
+Manipur,1987-88,319
+Meghalaya,1987-88,264
+Mizoram,1987-88,306
+Nagaland,1987-88,436
+Sikkim,1987-88,139
+Tripura,1987-88,393
+Uttarakhand,1987-88,–
+NCT Delhi,1987-88,–
+Puducherry,1987-88,–
+Andhra Pradesh,1988-89,5223
+Bihar,1988-89,4324
+Chhattisgarh,1988-89,–
+Goa,1988-89,284
+Gujarat,1988-89,4374
+Haryana,1988-89,1879
+Jharkhand,1988-89,–
+Karnataka,1988-89,3778
+Kerala,1988-89,2521
+Madhya Pradesh,1988-89,4596
+Maharashtra,1988-89,8102
+Orissa,1988-89,2261
+Punjab,1988-89,2666
+Rajasthan,1988-89,3415
+Tamil Nadu,1988-89,4617
+Uttar Pradesh,1988-89,8079
+West Bengal,1988-89,4279
+Arunachal Pradesh,1988-89,326
+Assam,1988-89,1855
+Himachal Pradesh,1988-89,985
+Jammu and Kashmir,1988-89,1404
+Manipur,1988-89,393
+Meghalaya,1988-89,318
+Mizoram,1988-89,287
+Nagaland,1988-89,457
+Sikkim,1988-89,164
+Tripura,1988-89,492
+Uttarakhand,1988-89,–
+NCT Delhi,1988-89,–
+Puducherry,1988-89,–
+Andhra Pradesh,1989-90,5768
+Bihar,1989-90,5219
+Chhattisgarh,1989-90,–
+Goa,1989-90,327
+Gujarat,1989-90,4844
+Haryana,1989-90,2121
+Jharkhand,1989-90,–
+Karnataka,1989-90,4401
+Kerala,1989-90,2889
+Madhya Pradesh,1989-90,4823
+Maharashtra,1989-90,9737
+Orissa,1989-90,2475
+Punjab,1989-90,2887
+Rajasthan,1989-90,3565
+Tamil Nadu,1989-90,5662
+Uttar Pradesh,1989-90,9637
+West Bengal,1989-90,4883
+Arunachal Pradesh,1989-90,392
+Assam,1989-90,2266
+Himachal Pradesh,1989-90,992
+Jammu and Kashmir,1989-90,1611
+Manipur,1989-90,423
+Meghalaya,1989-90,351
+Mizoram,1989-90,303
+Nagaland,1989-90,515
+Sikkim,1989-90,167
+Tripura,1989-90,525
+Uttarakhand,1989-90,–
+NCT Delhi,1989-90,–
+Puducherry,1989-90,–
+Andhra Pradesh,1990-91,6581
+Bihar,1990-91,6217
+Chhattisgarh,1990-91,–
+Goa,1990-91,395
+Gujarat,1990-91,5470
+Haryana,1990-91,2397
+Jharkhand,1990-91,–
+Karnataka,1990-91,4979
+Kerala,1990-91,3376
+Madhya Pradesh,1990-91,5899
+Maharashtra,1990-91,10772
+Orissa,1990-91,3051
+Punjab,1990-91,3400
+Rajasthan,1990-91,4728
+Tamil Nadu,1990-91,6621
+Uttar Pradesh,1990-91,12240
+West Bengal,1990-91,6028
+Arunachal Pradesh,1990-91,398
+Assam,1990-91,2689
+Himachal Pradesh,1990-91,1118
+Jammu and Kashmir,1990-91,2021
+Manipur,1990-91,453
+Meghalaya,1990-91,406
+Mizoram,1990-91,502
+Nagaland,1990-91,552
+Sikkim,1990-91,183
+Tripura,1990-91,613
+Uttarakhand,1990-91,–
+NCT Delhi,1990-91,–
+Puducherry,1990-91,–
+Andhra Pradesh,1991-92,7758
+Bihar,1991-92,6805
+Chhattisgarh,1991-92,–
+Goa,1991-92,466
+Gujarat,1991-92,6908
+Haryana,1991-92,2727
+Jharkhand,1991-92,–
+Karnataka,1991-92,6248
+Kerala,1991-92,4005
+Madhya Pradesh,1991-92,6637
+Maharashtra,1991-92,12052
+Orissa,1991-92,3640
+Punjab,1991-92,5012
+Rajasthan,1991-92,5810
+Tamil Nadu,1991-92,9600
+Uttar Pradesh,1991-92,13246
+West Bengal,1991-92,6191
+Arunachal Pradesh,1991-92,443
+Assam,1991-92,2763
+Himachal Pradesh,1991-92,2341
+Jammu and Kashmir,1991-92,2286
+Manipur,1991-92,533
+Meghalaya,1991-92,492
+Mizoram,1991-92,414
+Nagaland,1991-92,648
+Sikkim,1991-92,228
+Tripura,1991-92,677
+Uttarakhand,1991-92,–
+NCT Delhi,1991-92,–
+Puducherry,1991-92,–
+Andhra Pradesh,1992-93,8984
+Bihar,1992-93,7743
+Chhattisgarh,1992-93,–
+Goa,1992-93,499
+Gujarat,1992-93,7987
+Haryana,1992-93,2956
+Jharkhand,1992-93,–
+Karnataka,1992-93,7100
+Kerala,1992-93,4363
+Madhya Pradesh,1992-93,7663
+Maharashtra,1992-93,14014
+Orissa,1992-93,3915
+Punjab,1992-93,4208
+Rajasthan,1992-93,6347
+Tamil Nadu,1992-93,9748
+Uttar Pradesh,1992-93,16135
+West Bengal,1992-93,6646
+Arunachal Pradesh,1992-93,503
+Assam,1992-93,3136
+Himachal Pradesh,1992-93,1447
+Jammu and Kashmir,1992-93,2321
+Manipur,1992-93,824
+Meghalaya,1992-93,543
+Mizoram,1992-93,490
+Nagaland,1992-93,857
+Sikkim,1992-93,250
+Tripura,1992-93,657
+Uttarakhand,1992-93,–
+NCT Delhi,1992-93,–
+Puducherry,1992-93,–
+Andhra Pradesh,1993-94,10541
+Bihar,1993-94,8433
+Chhattisgarh,1993-94,–
+Goa,1993-94,558
+Gujarat,1993-94,8408
+Haryana,1993-94,4109
+Jharkhand,1993-94,–
+Karnataka,1993-94,8089
+Kerala,1993-94,5138
+Madhya Pradesh,1993-94,8878
+Maharashtra,1993-94,15983
+Orissa,1993-94,4456
+Punjab,1993-94,5221
+Rajasthan,1993-94,7427
+Tamil Nadu,1993-94,10062
+Uttar Pradesh,1993-94,16275
+West Bengal,1993-94,7973
+Arunachal Pradesh,1993-94,575
+Assam,1993-94,3620
+Himachal Pradesh,1993-94,1691
+Jammu and Kashmir,1993-94,2593
+Manipur,1993-94,637
+Meghalaya,1993-94,682
+Mizoram,1993-94,522
+Nagaland,1993-94,932
+Sikkim,1993-94,263
+Tripura,1993-94,785
+Uttarakhand,1993-94,–
+NCT Delhi,1993-94,800
+Puducherry,1993-94,–
+Andhra Pradesh,1994-95,12459
+Bihar,1994-95,8555
+Chhattisgarh,1994-95,–
+Goa,1994-95,601
+Gujarat,1994-95,9498
+Haryana,1994-95,6912
+Jharkhand,1994-95,–
+Karnataka,1994-95,8859
+Kerala,1994-95,5959
+Madhya Pradesh,1994-95,9315
+Maharashtra,1994-95,20026
+Orissa,1994-95,4982
+Punjab,1994-95,7505
+Rajasthan,1994-95,8421
+Tamil Nadu,1994-95,11432
+Uttar Pradesh,1994-95,21062
+West Bengal,1994-95,9283
+Arunachal Pradesh,1994-95,691
+Assam,1994-95,3998
+Himachal Pradesh,1994-95,2009
+Jammu and Kashmir,1994-95,3339
+Manipur,1994-95,675
+Meghalaya,1994-95,587
+Mizoram,1994-95,592
+Nagaland,1994-95,906
+Sikkim,1994-95,601
+Tripura,1994-95,880
+Uttarakhand,1994-95,–
+NCT Delhi,1994-95,2407
+Puducherry,1994-95,–
+Andhra Pradesh,1995-96,14301
+Bihar,1995-96,9417
+Chhattisgarh,1995-96,–
+Goa,1995-96,943
+Gujarat,1995-96,10811
+Haryana,1995-96,6131
+Jharkhand,1995-96,–
+Karnataka,1995-96,10406
+Kerala,1995-96,6922
+Madhya Pradesh,1995-96,10582
+Maharashtra,1995-96,21377
+Orissa,1995-96,5563
+Punjab,1995-96,7004
+Rajasthan,1995-96,10907
+Tamil Nadu,1995-96,12532
+Uttar Pradesh,1995-96,20787
+West Bengal,1995-96,10509
+Arunachal Pradesh,1995-96,803
+Assam,1995-96,4390
+Himachal Pradesh,1995-96,2350
+Jammu and Kashmir,1995-96,3573
+Manipur,1995-96,811
+Meghalaya,1995-96,779
+Mizoram,1995-96,715
+Nagaland,1995-96,1040
+Sikkim,1995-96,993
+Tripura,1995-96,990
+Uttarakhand,1995-96,–
+NCT Delhi,1995-96,2952
+Puducherry,1995-96,–
+Andhra Pradesh,1996-97,16265
+Bihar,1996-97,9407
+Chhattisgarh,1996-97,–
+Goa,1996-97,946
+Gujarat,1996-97,12576
+Haryana,1996-97,7831
+Jharkhand,1996-97,–
+Karnataka,1996-97,11981
+Kerala,1996-97,7943
+Madhya Pradesh,1996-97,13093
+Maharashtra,1996-97,25005
+Orissa,1996-97,6310
+Punjab,1996-97,7547
+Rajasthan,1996-97,10964
+Tamil Nadu,1996-97,15402
+Uttar Pradesh,1996-97,23017
+West Bengal,1996-97,13032
+Arunachal Pradesh,1996-97,891
+Assam,1996-97,4267
+Himachal Pradesh,1996-97,2633
+Jammu and Kashmir,1996-97,4021
+Manipur,1996-97,1014
+Meghalaya,1996-97,785
+Mizoram,1996-97,810
+Nagaland,1996-97,1096
+Sikkim,1996-97,1241
+Tripura,1996-97,1179
+Uttarakhand,1996-97,–
+NCT Delhi,1996-97,3515
+Puducherry,1996-97,–
+Andhra Pradesh,1997-98,17745
+Bihar,1997-98,10216
+Chhattisgarh,1997-98,–
+Goa,1997-98,1270
+Gujarat,1997-98,14875
+Haryana,1997-98,7806
+Jharkhand,1997-98,–
+Karnataka,1997-98,12601
+Kerala,1997-98,9818
+Madhya Pradesh,1997-98,14225
+Maharashtra,1997-98,27675
+Orissa,1997-98,6854
+Punjab,1997-98,9472
+Rajasthan,1997-98,12685
+Tamil Nadu,1997-98,17333
+Uttar Pradesh,1997-98,26626
+West Bengal,1997-98,13557
+Arunachal Pradesh,1997-98,972
+Assam,1997-98,5022
+Himachal Pradesh,1997-98,3453
+Jammu and Kashmir,1997-98,4893
+Manipur,1997-98,1133
+Meghalaya,1997-98,851
+Mizoram,1997-98,870
+Nagaland,1997-98,1230
+Sikkim,1997-98,1394
+Tripura,1997-98,1350
+Uttarakhand,1997-98,–
+NCT Delhi,1997-98,4211
+Puducherry,1997-98,–
+Andhra Pradesh,1998-99,21958
+Bihar,1998-99,12171
+Chhattisgarh,1998-99,–
+Goa,1998-99,1458
+Gujarat,1998-99,19172
+Haryana,1998-99,8581
+Jharkhand,1998-99,–
+Karnataka,1998-99,14886
+Kerala,1998-99,10611
+Madhya Pradesh,1998-99,15968
+Maharashtra,1998-99,30317
+Orissa,1998-99,8642
+Punjab,1998-99,10963
+Rajasthan,1998-99,14314
+Tamil Nadu,1998-99,19880
+Uttar Pradesh,1998-99,31462
+West Bengal,1998-99,17153
+Arunachal Pradesh,1998-99,1004
+Assam,1998-99,5204
+Himachal Pradesh,1998-99,4167
+Jammu and Kashmir,1998-99,5849
+Manipur,1998-99,1116
+Meghalaya,1998-99,1008
+Mizoram,1998-99,893
+Nagaland,1998-99,1491
+Sikkim,1998-99,1621
+Tripura,1998-99,1531
+Uttarakhand,1998-99,–
+NCT Delhi,1998-99,4943
+Puducherry,1998-99,–
+Andhra Pradesh,1999-00,22767
+Bihar,1999-00,19548
+Chhattisgarh,1999-00,–
+Goa,1999-00,1614
+Gujarat,1999-00,21466
+Haryana,1999-00,8359
+Jharkhand,1999-00,–
+Karnataka,1999-00,17818
+Kerala,1999-00,12900
+Madhya Pradesh,1999-00,17957
+Maharashtra,1999-00,38244
+Orissa,1999-00,10120
+Punjab,1999-00,11980
+Rajasthan,1999-00,16256
+Tamil Nadu,1999-00,22627
+Uttar Pradesh,1999-00,34615
+West Bengal,1999-00,22677
+Arunachal Pradesh,1999-00,1098
+Assam,1999-00,7086
+Himachal Pradesh,1999-00,4714
+Jammu and Kashmir,1999-00,7108
+Manipur,1999-00,1780
+Meghalaya,1999-00,1195
+Mizoram,1999-00,1161
+Nagaland,1999-00,1495
+Sikkim,1999-00,1620
+Tripura,1999-00,1773
+Uttarakhand,1999-00,–
+NCT Delhi,1999-00,5912
+Puducherry,1999-00,–
+Andhra Pradesh,2000-01,28119
+Bihar,2000-01,16946
+Chhattisgarh,2000-01,1917
+Goa,2000-01,1962
+Gujarat,2000-01,27175
+Haryana,2000-01,9159
+Jharkhand,2000-01,–
+Karnataka,2000-01,19664
+Kerala,2000-01,13149
+Madhya Pradesh,2000-01,16924
+Maharashtra,2000-01,42208
+Orissa,2000-01,11047
+Punjab,2000-01,14111
+Rajasthan,2000-01,17494
+Tamil Nadu,2000-01,24437
+Uttar Pradesh,2000-01,36681
+West Bengal,2000-01,26741
+Arunachal Pradesh,2000-01,1206
+Assam,2000-01,7631
+Himachal Pradesh,2000-01,5315
+Jammu and Kashmir,2000-01,7829
+Manipur,2000-01,1381
+Meghalaya,2000-01,1424
+Mizoram,2000-01,1288
+Nagaland,2000-01,1835
+Sikkim,2000-01,947
+Tripura,2000-01,2135
+Uttarakhand,2000-01,1110
+NCT Delhi,2000-01,7362
+Puducherry,2000-01,–
+Andhra Pradesh,2001-02,31074
+Bihar,2001-02,14869
+Chhattisgarh,2001-02,5624
+Goa,2001-02,2353
+Gujarat,2001-02,25651
+Haryana,2001-02,10728
+Jharkhand,2001-02,7934
+Karnataka,2001-02,21938
+Kerala,2001-02,13132
+Madhya Pradesh,2001-02,16960
+Maharashtra,2001-02,42480
+Orissa,2001-02,12065
+Punjab,2001-02,15692
+Rajasthan,2001-02,18995
+Tamil Nadu,2001-02,24818
+Uttar Pradesh,2001-02,38104
+West Bengal,2001-02,28079
+Arunachal Pradesh,2001-02,1381
+Assam,2001-02,8550
+Himachal Pradesh,2001-02,5670
+Jammu and Kashmir,2001-02,8050
+Manipur,2001-02,2117
+Meghalaya,2001-02,1395
+Mizoram,2001-02,1334
+Nagaland,2001-02,2019
+Sikkim,2001-02,1909
+Tripura,2001-02,2466
+Uttarakhand,2001-02,3298
+NCT Delhi,2001-02,8631
+Puducherry,2001-02,–
+Andhra Pradesh,2002-03,34373
+Bihar,2002-03,17752
+Chhattisgarh,2002-03,6822
+Goa,2002-03,2401
+Gujarat,2002-03,26921
+Haryana,2002-03,10582
+Jharkhand,2002-03,9809
+Karnataka,2002-03,24074
+Kerala,2002-03,16967
+Madhya Pradesh,2002-03,18989
+Maharashtra,2002-03,47217
+Orissa,2002-03,13267
+Punjab,2002-03,17337
+Rajasthan,2002-03,21542
+Tamil Nadu,2002-03,30156
+Uttar Pradesh,2002-03,42086
+West Bengal,2002-03,27716
+Arunachal Pradesh,2002-03,1363
+Assam,2002-03,8936
+Himachal Pradesh,2002-03,6616
+Jammu and Kashmir,2002-03,8738
+Manipur,2002-03,2157
+Meghalaya,2002-03,1589
+Mizoram,2002-03,1405
+Nagaland,2002-03,1917
+Sikkim,2002-03,2132
+Tripura,2002-03,2537
+Uttarakhand,2002-03,4848
+NCT Delhi,2002-03,10214
+Puducherry,2002-03,–
+Andhra Pradesh,2003-04,40120
+Bihar,2003-04,19134
+Chhattisgarh,2003-04,8951
+Goa,2003-04,2416
+Gujarat,2003-04,32986
+Haryana,2003-04,15122
+Jharkhand,2003-04,9738
+Karnataka,2003-04,29267
+Kerala,2003-04,19769
+Madhya Pradesh,2003-04,23923
+Maharashtra,2003-04,61034
+Orissa,2003-04,15565
+Punjab,2003-04,20335
+Rajasthan,2003-04,25869
+Tamil Nadu,2003-04,33765
+Uttar Pradesh,2003-04,69441
+West Bengal,2003-04,38421
+Arunachal Pradesh,2003-04,2192
+Assam,2003-04,10596
+Himachal Pradesh,2003-04,8096
+Jammu and Kashmir,2003-04,8817
+Manipur,2003-04,2320
+Meghalaya,2003-04,1770
+Mizoram,2003-04,1826
+Nagaland,2003-04,2384
+Sikkim,2003-04,1477
+Tripura,2003-04,2764
+Uttarakhand,2003-04,6206
+NCT Delhi,2003-04,11720
+Puducherry,2003-04,–
+Andhra Pradesh,2004-05,47153
+Bihar,2004-05,20055
+Chhattisgarh,2004-05,9647
+Goa,2004-05,2541
+Gujarat,2004-05,34900
+Haryana,2004-05,14442
+Jharkhand,2004-05,11635
+Karnataka,2004-05,34246
+Kerala,2004-05,20276
+Madhya Pradesh,2004-05,29413
+Maharashtra,2004-05,72668
+Orissa,2004-05,15886
+Punjab,2004-05,20994
+Rajasthan,2004-05,28907
+Tamil Nadu,2004-05,41780
+Uttar Pradesh,2004-05,59124
+West Bengal,2004-05,33494
+Arunachal Pradesh,2004-05,2085
+Assam,2004-05,14745
+Himachal Pradesh,2004-05,8034
+Jammu and Kashmir,2004-05,11127
+Manipur,2004-05,2600
+Meghalaya,2004-05,2070
+Mizoram,2004-05,1817
+Nagaland,2004-05,2276
+Sikkim,2004-05,2161
+Tripura,2004-05,2984
+Uttarakhand,2004-05,6366
+NCT Delhi,2004-05,12875
+Puducherry,2004-05,–
+Andhra Pradesh,2005-06,48306
+Bihar,2005-06,22568
+Chhattisgarh,2005-06,9725
+Goa,2005-06,2849
+Gujarat,2005-06,34235
+Haryana,2005-06,14830
+Jharkhand,2005-06,13417
+Karnataka,2005-06,34973
+Kerala,2005-06,21115
+Madhya Pradesh,2005-06,28975
+Maharashtra,2005-06,68677
+Orissa,2005-06,15746
+Punjab,2005-06,20453
+Rajasthan,2005-06,27220
+Tamil Nadu,2005-06,38744
+Uttar Pradesh,2005-06,59839
+West Bengal,2005-06,40587
+Arunachal Pradesh,2005-06,2437
+Assam,2005-06,12088
+Himachal Pradesh,2005-06,8587
+Jammu and Kashmir,2005-06,13467
+Manipur,2005-06,2743
+Meghalaya,2005-06,2008
+Mizoram,2005-06,2172
+Nagaland,2005-06,2809
+Sikkim,2005-06,2146
+Tripura,2005-06,3301
+Uttarakhand,2005-06,7664
+NCT Delhi,2005-06,11142
+Puducherry,2005-06,2173
+Andhra Pradesh,2006-07,56648
+Bihar,2006-07,27136
+Chhattisgarh,2006-07,11991
+Goa,2006-07,3176
+Gujarat,2006-07,39200
+Haryana,2006-07,19638
+Jharkhand,2006-07,15726
+Karnataka,2006-07,44085
+Kerala,2006-07,23159
+Madhya Pradesh,2006-07,30217
+Maharashtra,2006-07,75841
+Orissa,2006-07,19346
+Punjab,2006-07,26297
+Rajasthan,2006-07,31856
+Tamil Nadu,2006-07,51147
+Uttar Pradesh,2006-07,74983
+West Bengal,2006-07,41203
+Arunachal Pradesh,2006-07,2786
+Assam,2006-07,13485
+Himachal Pradesh,2006-07,10091
+Jammu and Kashmir,2006-07,13873
+Manipur,2006-07,3626
+Meghalaya,2006-07,2320
+Mizoram,2006-07,2295
+Nagaland,2006-07,3085
+Sikkim,2006-07,2253
+Tripura,2006-07,3301
+Uttarakhand,2006-07,8516
+NCT Delhi,2006-07,12966
+Puducherry,2006-07,2387
+Andhra Pradesh,2007-08,74875
+Bihar,2007-08,31573
+Chhattisgarh,2007-08,15029
+Goa,2007-08,3559
+Gujarat,2007-08,42681
+Haryana,2007-08,22079
+Jharkhand,2007-08,18360
+Karnataka,2007-08,48031
+Kerala,2007-08,28692
+Madhya Pradesh,2007-08,35265
+Maharashtra,2007-08,80240
+Orissa,2007-08,22844
+Punjab,2007-08,26519
+Rajasthan,2007-08,37757
+Tamil Nadu,2007-08,55748
+Uttar Pradesh,2007-08,87304
+West Bengal,2007-08,46644
+Arunachal Pradesh,2007-08,3068
+Assam,2007-08,15150
+Himachal Pradesh,2007-08,10614
+Jammu and Kashmir,2007-08,17046
+Manipur,2007-08,3720
+Meghalaya,2007-08,2771
+Mizoram,2007-08,2559
+Nagaland,2007-08,3563
+Sikkim,2007-08,2820
+Tripura,2007-08,3835
+Uttarakhand,2007-08,9975
+NCT Delhi,2007-08,18160
+Puducherry,2007-08,2588
+Andhra Pradesh,2008-09(RE),90228
+Bihar,2008-09(RE),45508
+Chhattisgarh,2008-09(RE),20234
+Goa,2008-09(RE),4881
+Gujarat,2008-09(RE),52800
+Haryana,2008-09(RE),26826
+Jharkhand,2008-09(RE),20641
+Karnataka,2008-09(RE),54178
+Kerala,2008-09(RE),32990
+Madhya Pradesh,2008-09(RE),42239
+Maharashtra,2008-09(RE),102557
+Orissa,2008-09(RE),31375
+Punjab,2008-09(RE),32812
+Rajasthan,2008-09(RE),43459
+Tamil Nadu,2008-09(RE),68297
+Uttar Pradesh,2008-09(RE),109185
+West Bengal,2008-09(RE),63608
+Arunachal Pradesh,2008-09(RE),4874
+Assam,2008-09(RE),26389
+Himachal Pradesh,2008-09(RE),12931
+Jammu and Kashmir,2008-09(RE),18750
+Manipur,2008-09(RE),4742
+Meghalaya,2008-09(RE),3973
+Mizoram,2008-09(RE),3199
+Nagaland,2008-09(RE),4389
+Sikkim,2008-09(RE),3395
+Tripura,2008-09(RE),5122
+Uttarakhand,2008-09(RE),10841
+NCT Delhi,2008-09(RE),21118
+Puducherry,2008-09(RE),3681
+Andhra Pradesh,2009-10(BE),100990
+Bihar,2009-10(BE),47446
+Chhattisgarh,2009-10(BE),22820
+Goa,2009-10(BE),5719
+Gujarat,2009-10(BE),57417
+Haryana,2009-10(BE),32445
+Jharkhand,2009-10(BE),22992
+Karnataka,2009-10(BE),61064
+Kerala,2009-10(BE),36031
+Madhya Pradesh,2009-10(BE),48735
+Maharashtra,2009-10(BE),119762
+Orissa,2009-10(BE),32798
+Punjab,2009-10(BE),35684
+Rajasthan,2009-10(BE),49737
+Tamil Nadu,2009-10(BE),73628
+Uttar Pradesh,2009-10(BE),121597
+West Bengal,2009-10(BE),70922
+Arunachal Pradesh,2009-10(BE),4571
+Assam,2009-10(BE),34936
+Himachal Pradesh,2009-10(BE),13075
+Jammu and Kashmir,2009-10(BE),22378
+Manipur,2009-10(BE),4529
+Meghalaya,2009-10(BE),4582
+Mizoram,2009-10(BE),3487
+Nagaland,2009-10(BE),4777
+Sikkim,2009-10(BE),3533
+Tripura,2009-10(BE),6084
+Uttarakhand,2009-10(BE),14037
+NCT Delhi,2009-10(BE),23043
+Puducherry,2009-10(BE),4108
