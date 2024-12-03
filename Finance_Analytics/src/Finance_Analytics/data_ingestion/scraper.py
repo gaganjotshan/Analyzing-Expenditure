@@ -9,7 +9,7 @@ import pandas as pd
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from Finance_Analytics import logger
 
-class RBIDataScraper:
+class FinancialDataScraper:
     def __init__(self):
         self.url = "https://rbi.org.in/scripts/OccasionalPublications.aspx?head=Handbook%20of%20Statistics%20on%20State%20Government%20Finances%20-%202010"
         self.tables_to_download = {
@@ -135,7 +135,7 @@ class RBIDataScraper:
             logger.error(f"Error converting XLS to CSV: {e}")
 
 def main():
-    scraper = RBIDataScraper()
+    scraper = FinancialDataScraper()
     scraper.download_tables()
 
 if __name__ == "__main__":
