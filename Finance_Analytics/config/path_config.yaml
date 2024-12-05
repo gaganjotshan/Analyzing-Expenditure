@@ -1,0 +1,6 @@
+paths:
+  raw_data_dir: "/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/raw"
+  processed_data_dir: "/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/processed"
+  final_data_dir: "/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final"
+logging:
+  level: "INFO"
