@@ -12,6 +12,8 @@ ipywidgets
 xlrd
 openpyxl
 dash
-
+pyyaml
+psycopg2-binary
+astro
 
 -e .
