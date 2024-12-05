@@ -3,9 +3,26 @@ from dash import dcc, html
 from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
+import yaml 
+import os
+import sys
 
-# Load your cleaned data
-df = pd.read_csv('/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final/expenditure_analysis/cleaned_expenditure.csv')
+# Add the project's root directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+from Finance_Analytics import logger
+
+def load_config(file_path):
+    """Load configuration from a YAML file."""
+    with open(file_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+# Load configuration
+config_file = '/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/config/path_config.yaml'
+config = load_config(config_file)
+
+# Load your cleaned data from the path specified in the config
+df = pd.read_csv(config['paths']['final_data_dir'] + '/expenditure_analysis/cleaned_expenditure.csv')
 
 # Convert 'Year' to a numeric value representing the starting year
 df['Year'] = df['Year'].apply(lambda x: int(x.split('-')[0]))

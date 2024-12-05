@@ -6,14 +6,26 @@ from pathlib import Path
 from ydata_profiling import ProfileReport
 import sys
 import os
+import yaml  # Import PyYAML for loading YAML files
 
+# Add the project's root directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from Finance_Analytics import logger
 
+def load_config(file_path):
+    """Load configuration from a YAML file."""
+    with open(file_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
 class ExploratoryDataAnalysis:
-    def __init__(self):
-        self.processed_data_dir = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/processed/expenditure_analysis")
-        self.final_data_dir = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final/expenditure_analysis")
+    def __init__(self, config_file='/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/config/path_config.yaml'):
+        # Load configurations
+        config = load_config(config_file)
+
+        # Define directories from config
+        self.processed_data_dir = Path(config['paths']['processed_data_dir']) / "expenditure_analysis"
+        self.final_data_dir = Path(config['paths']['final_data_dir']) / "expenditure_analysis"
         self.artifacts_dir = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/artifacts/expenditure_analysis")
         self.plots_dir = self.artifacts_dir / "plots"
         self.html_reports_dir = self.artifacts_dir / "HTML-reports"
@@ -65,16 +77,19 @@ class ExploratoryDataAnalysis:
                 sns.lineplot(data=category_data, x='Year', y='Value', label=category)
             plt.title('Expenditure Over Time by Category')
             plt.legend(title='Exp_Category', bbox_to_anchor=(1.05, 1), loc='upper left')
+        
         elif plot_type == 'state_wise_expenditure':
             state_totals = df.groupby('State')['Value'].sum().sort_values(ascending=False)
             sns.barplot(x=state_totals.index, y=state_totals.values)
             plt.title('Total Expenditure by State')
             plt.ylabel('Total Expenditure')
+        
         elif plot_type == 'category_distribution':
             category_totals = df.groupby('Exp_Category')['Value'].sum()
             category_totals.plot(kind='pie', autopct='%1.1f%%')
             plt.title('Distribution of Expenditure Categories')
             plt.axis('equal')
+        
         elif plot_type == 'total_expenditure_trend':
             yearly_totals = df.groupby('Year')['Value'].sum()
             sns.lineplot(x=yearly_totals.index, y=yearly_totals.values)

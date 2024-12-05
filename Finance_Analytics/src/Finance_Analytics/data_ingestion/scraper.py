@@ -1,16 +1,29 @@
+import time
 import sys
 import os
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd  
+import pandas as pd
+from urllib.parse import urljoin
+import yaml
+from pathlib import Path
 
 # Add the project's root directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from Finance_Analytics import logger
 
+def load_config(file_path):
+    """Load configuration from a YAML file."""
+    with open(file_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
 class FinancialDataScraper:
-    def __init__(self):
+    def __init__(self, config_file='/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/config/path_config.yaml', download_categories=["expenditure_analysis"]):
+        # Load configurations
+        config = load_config(config_file)
+
         self.url = "https://rbi.org.in/scripts/OccasionalPublications.aspx?head=Handbook%20of%20Statistics%20on%20State%20Government%20Finances%20-%202010"
         self.tables_to_download = {
             "expenditure_analysis": {
@@ -22,7 +35,6 @@ class FinancialDataScraper:
                 'Revenue_Deficit': 'Table 2 : Revenue Deficit',
                 'Own_Tax_Revenue': 'Table 6 : Own Tax Revenue'
             },
-             
             "anomaly_detection": {
                 'Aggregate_Receipts': 'Table 4 : Aggregate Receipts',
                 'Capital_Receipts': 'Table 12 : Capital Receipts',
@@ -31,27 +43,42 @@ class FinancialDataScraper:
                 'Outstanding_Liabilities': 'Table 28 : Composition of Outstanding Liabilities'
             }
         }
-        # Set absolute path for raw data directory
-        self.raw_data_dir = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/raw")
+
+        # Set absolute path for raw data directory from config
+        self.download_categories = download_categories
+        self.raw_data_dir = Path(config['paths']['raw_data_dir'])
         self.expenditure_analysis_dir = self.raw_data_dir / "expenditure_analysis"
         self.anomaly_detection_dir = self.raw_data_dir / "anomaly_detection"
+        
+        # Create directories if they don't exist
         self.expenditure_analysis_dir.mkdir(parents=True, exist_ok=True)
         self.anomaly_detection_dir.mkdir(parents=True, exist_ok=True)
 
     def download_tables(self):
         logger.info(f"Accessing URL: {self.url}")
-        try:
-            response = requests.get(self.url)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.content, 'html.parser')
-            for task, tables in self.tables_to_download.items():
-                for table_name, table_text in tables.items():
-                    self._download_single_table(soup, table_name, table_text, task)
-            logger.info("All specified tables have been processed.")
-        except requests.RequestException as e:
-            logger.error(f"Error accessing the website: {e}")
-        except Exception as e:
-            logger.error(f"Unexpected error: {e}")
+        retries = 3
+        for attempt in range(retries):
+            try:
+                response = requests.get(self.url, timeout=30)
+                response.raise_for_status()
+                soup = BeautifulSoup(response.content, 'html.parser')
+                
+                for task in self.download_categories:
+                    if task in self.tables_to_download:
+                        for table_name, table_text in self.tables_to_download[task].items():
+                            self._download_single_table(soup, table_name, table_text, task)
+                
+                logger.info("All specified tables have been processed.")
+                break
+            
+            except requests.RequestException as e:
+                if attempt < retries - 1:
+                    logger.warning(f"Attempt {attempt + 1} failed. Retrying...")
+                    time.sleep(5)
+                else:
+                    logger.error(f"Error accessing the website: {e}")
+            except Exception as e:
+                logger.error(f"Unexpected error: {e}")
 
     def _download_single_table(self, soup, table_name, table_text, task):
         try:
@@ -64,7 +91,7 @@ class FinancialDataScraper:
             
             for link in links:
                 href = link.get('href', '')
-                full_url = f'https://rbi.org.in/scripts/{href}' if href.startswith('PublicationsView.aspx') else f'https://rbi.org.in/{href}'
+                full_url = urljoin('https://rbi.org.in/scripts/', href)
                 
                 logger.info(f"Checking link: {full_url}")
                 
@@ -75,7 +102,7 @@ class FinancialDataScraper:
 
     def _find_and_download_excel_file(self, publication_url, table_name, task):
         try:
-            response = requests.get(publication_url)
+            response = requests.get(publication_url, timeout=30)
             response.raise_for_status()
             pub_soup = BeautifulSoup(response.content, 'html.parser')
 
@@ -86,10 +113,7 @@ class FinancialDataScraper:
             for link in download_links:
                 href = link['href']
                 if any(ext in href.lower() for ext in ['.xls', '.xlsx']):
-                    if not href.startswith('http'):
-                        excel_file_url = 'https://rbidocs.rbi.org.in' + href
-                    else:
-                        excel_file_url = href
+                    excel_file_url = urljoin('https://rbidocs.rbi.org.in', href)
                     
                     logger.info(f"Found file for {table_name}: {excel_file_url}")
 
@@ -106,24 +130,35 @@ class FinancialDataScraper:
             logger.error(f"Unexpected error accessing publication page for {table_name}: {e}")
 
     def _download_file(self, url, table_name, task):
-        try:
-            file_response = requests.get(url)
-            file_response.raise_for_status()
-
-            if task == "expenditure_analysis":
-                file_path = self.expenditure_analysis_dir / f'{table_name}.xls'
-            else:
-                file_path = self.anomaly_detection_dir / f'{table_name}.xls'
+        retries = 3
+        for attempt in range(retries):
+            try:
+                file_response = requests.get(url, timeout=30)
+                file_response.raise_for_status()
+                
+                if task == "expenditure_analysis":
+                    file_path = self.expenditure_analysis_dir / f'{table_name}.xls'
+                else:
+                    file_path = self.anomaly_detection_dir / f'{table_name}.xls'
+                    
+                with open(file_path, 'wb') as f:
+                    f.write(file_response.content)
+                    
+                logger.info(f"Downloaded {table_name} to {file_path}")
+                
+                # Convert to CSV after downloading
+                self.convert_xls_to_csv(file_path)
+                
+                return
             
-            with open(file_path, 'wb') as f:
-                f.write(file_response.content)
-
-            logger.info(f"Downloaded {table_name} to {file_path}")
-
-            self.convert_xls_to_csv(file_path)
-
-        except requests.RequestException as e:
-            logger.error(f"Error downloading {table_name}: {e}")
+            except requests.RequestException as e:
+                logger.error(f"Error downloading {table_name}: {e}")
+                
+                if attempt < retries - 1:
+                    logger.info(f"Retrying download for {table_name} (attempt {attempt + 1})...")
+                    time.sleep(5) 
+            except Exception as e:
+                logger.error(f"Unexpected error while downloading file: {e}")
 
     def convert_xls_to_csv(self, xls_file_path):
         try:
@@ -135,7 +170,7 @@ class FinancialDataScraper:
             logger.error(f"Error converting XLS to CSV: {e}")
 
 def main():
-    scraper = FinancialDataScraper()
+    scraper = FinancialDataScraper(download_categories=["expenditure_analysis"])
     scraper.download_tables()
 
 if __name__ == "__main__":
