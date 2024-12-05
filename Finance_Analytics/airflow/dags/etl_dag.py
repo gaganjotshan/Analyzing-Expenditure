@@ -4,6 +4,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from pathlib import Path
+import yaml  # Import PyYAML for loading YAML files
 
 # Add the project's root directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
@@ -16,14 +17,23 @@ from airflow.configuration import conf
 from sqlalchemy import create_engine
 import pandas as pd
 
+def load_config(file_path):
+    """Load configuration from a YAML file."""
+    with open(file_path, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+# Load configuration
+config_file = '/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/config/path_config.yaml'
+config = load_config(config_file)
 
 # Get the SQL Alchemy connection string from the Airflow configuration
 sql_alchemy_conn = conf.get("database", "sql_alchemy_conn")
 
-# Define paths
-RAW_DATA_DIR = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/raw/expenditure_analysis")
-PROCESSED_DATA_DIR = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/processed/expenditure_analysis")
-FINAL_DATA_DIR = Path("/Users/gaganjotshan/Documents/Projects/Analyzing-Expenditure/Finance_Analytics/data/final/expenditure_analysis")
+# Define paths from config
+RAW_DATA_DIR = Path(config['paths']['raw_data_dir']) / "expenditure_analysis"
+PROCESSED_DATA_DIR = Path(config['paths']['processed_data_dir']) / "expenditure_analysis"
+FINAL_DATA_DIR = Path(config['paths']['final_data_dir']) / "expenditure_analysis"
 
 default_args = {
     'owner': 'airflow',
@@ -31,8 +41,8 @@ default_args = {
     'start_date': datetime(2024, 12, 1),
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 3,  # Retry up to 3 times
-    'retry_delay': timedelta(minutes=5),  # Wait 5 minutes between retries
+    'retries': 3, 
+    'retry_delay': timedelta(minutes=5),  
 }
 
 dag = DAG(
@@ -50,8 +60,10 @@ def scrape_financial_data():
 
 def transform_and_clean_data():
     logger.info("Starting data transformation and cleaning")
+    
     # Transform data
     all_dataframes, skipped_files = process_files(RAW_DATA_DIR)
+    
     if skipped_files:
         logger.warning("The following files were skipped during transformation:")
         for filename, reason in skipped_files:
@@ -60,6 +72,7 @@ def transform_and_clean_data():
     # Clean data
     cleaner = DataCleaner()
     cleaner.clean_all_files()
+    
     logger.info("Data transformation and cleaning completed")
 
 def load_to_postgres():
@@ -77,6 +90,7 @@ def load_to_postgres():
     
     # Load cleaned data into PostgreSQL
     total_rows = 0
+    
     for file in FINAL_DATA_DIR.glob("*_cleaned.csv"):
         df = pd.read_csv(file)
         category = file.stem.replace("_cleaned", "")
